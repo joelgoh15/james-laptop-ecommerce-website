@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AppDB" Class="AppDB_DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.CheckoutTable" Member="CheckoutTables">
+    <Type Name="CheckoutTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NameOnCard" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreditCardNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ExpMonth" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CVV" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ExpYear" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LaptopQuantity" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalFee" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SubscriptionNotificationTable" Member="SubscriptionNotificationTables">
+    <Type Name="SubscriptionNotificationTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SubscriptionStatus" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NotificationStatus" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

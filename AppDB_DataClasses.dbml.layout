@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AppDB_DataClasses">
+  <DataContextMoniker Name="/AppDB_DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8b90dd3c-77c2-44b7-8bfb-935dd5c7cdd3" absoluteBounds="0.625, 0.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/AppDB_DataClassesDataContext/CheckoutTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f09d80b-6b80-49de-917e-a414da838f06" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df7f8066-c0dc-4b72-bb1d-d7157ce60714" absoluteBounds="2.875, 0.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/AppDB_DataClassesDataContext/SubscriptionNotificationTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="afa7ef10-6aae-49a5-8949-51cf48237f2a" absoluteBounds="2.89, 1.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
