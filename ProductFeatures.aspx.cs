@@ -12,21 +12,18 @@ namespace Portfolio2_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (!IsPostBack) 
             {
-                //enable admin page selction base on user role
                 string[] roleNames = Roles.GetRolesForUser();
-                if (roleNames[0] == "admin")
+                if (roleNames[0] == "admin") 
                 {
                     idALinkAdminPage.Visible = true;
                 }
-                else
+                else 
                 {
                     idALinkAdminPage.Visible = false;
                 }
             }
         }
-
-
-        }//end-class
-}//end-namespace
+    }
+}
