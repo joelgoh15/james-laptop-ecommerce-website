@@ -7,7 +7,6 @@
     <title>Accout</title>
     <meta charset="utf-8" />
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -60,7 +59,6 @@
             padding-bottom:1px;
             padding-left:1px; 
             padding-right:1px;
-            /*border-radius:1px 1px;*/
         }
 
         div.classDivSideMenuComponentParent:hover {
@@ -68,15 +66,11 @@
         }
 
         div.classDivSideMenuComponent {
-            width: 24px; /*35px*/
-            height: 3px; /*5px*/
+            width: 24px; 
+            height: 3px; 
             background-color: black;
-            margin: 3px; /*3px 0*/
+            margin: 3px; 
         }
-
-        /* *********************************** */
-        /* style for side menu */
-        /* start */
 
         .sidenav {
             height: 100%;
@@ -122,7 +116,6 @@
             background-color: lightgray;
             color:navy;
             margin-left:5px;
-    
         }
 
         .sidenav .closebtn {
@@ -138,17 +131,10 @@
             .sidenav a {font-size: 18px;}
         }
 
-        /* end */
-        /* style for side menu */
-        /* *********************************** */
-
         label.classLabelAppName2 {
             font-family: Calibri;
             font-size: 18px;
             margin-top:10px;
-            /*height:30px;*/
-            /*background-color:antiquewhite;*/
-            /*margin-left:10px;*/
         }
 
         i.classBrandName2 {
@@ -164,17 +150,13 @@
             border: 1px solid black;
             margin-top:10px;
             border-radius:10px;
-
         }
 
         table.classTableCheckoutPageMainContent {
             width: 100%;
-            /*border: 1px solid black;*/
-            /*border-radius:10px;*/
         }
 
         table.classTableCheckoutPageMainContent td {
-            /*border: 1px solid black;*/
         }
 
         .classTableTdPageHeading {
@@ -183,11 +165,9 @@
             text-align:left;
         }
 
-
         .classTableTdProductFeatureMainContent {
              width:40%;
              padding-top:0px;
-             /*text-align:start;*/
             vertical-align:top; 
         }
 
@@ -204,10 +184,8 @@
         }
 
         div.classDivProductFeaturesDescription {
-            /*border: 1px solid black;*/
             width:100%;
-            height: 400px; /*450px*/
-            /*overflow:scroll;*/
+            height: 400px; 
         }
 
         table.classTableCheckoutForm {
@@ -247,7 +225,6 @@
             font-family:Calibri;
             font-size:16px;
             float:left;
-            /*vertical-align:central;*/
         }
 
         label.classLabelNotification {
@@ -255,13 +232,6 @@
             font-size:16px;
             float:left;
         }
-
-        
-
-
-        /* *********************************** */
-        /* snackbar-subscription */
-        /* start */
 
         #snackbarTickedSubscription {
           visibility: hidden;
@@ -286,7 +256,6 @@
           -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
           animation: fadein 0.5s, fadeout 0.5s 2.5s;
         }
-
 
         #snackbarUntickedSubscription {
             visibility: hidden;
@@ -332,15 +301,6 @@
           to {bottom: 0; opacity: 0;}
         }
 
-        /* end */
-        /* snackbar-subscription */
-        /* *********************************** */
-
-
-        /* *********************************** */
-        /* snackbar-notification */
-        /* start */
-
         #snackbarTickedNotification {
           visibility: hidden;
           min-width: 250px;
@@ -364,7 +324,6 @@
           -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
           animation: fadein 0.5s, fadeout 0.5s 2.5s;
         }
-
 
         #snackbarUntickedNotification {
             visibility: hidden;
@@ -410,27 +369,19 @@
           to {bottom: 0; opacity: 0;}
         }
 
-        /* end */
-        /* snackbar-notification */
-        /* *********************************** */
-
         table.classTableSubscriptionAndNotification {
             width: 100%;
         }
 
          .classDivFooter {
              border-top: 1px solid black;
-             /*position: fixed;*/
              bottom: 0;
              width: inherit;
              min-width: 1000px;
              height: 40px;
-             /*background-color: aliceblue;*/
              font-family: Calibri;
              font-size: 11px;
-    
          }
-
 
         .cssClassDropDownListSubscription {
             font-family:Calibri;
@@ -453,15 +404,12 @@
         div.classDivLogoutOption {
             width:fit-content;
             height:fit-content;
-            /*border: 1px solid black;*/
         }
 
         .CssClassIdUserLoginStatus {
-            /*float:right;*/
             font-family:Calibri;
             font-size:16px;
             color:black;
-            /*border: 1px solid black;*/
             padding-left:1px;
             padding-right:1px;
             padding-top:1px;
@@ -474,61 +422,39 @@
         .CssClassIdUserLoginStatus:hover {
             text-decoration:underline;
         }
-
-
     </style>
     <script type="text/javascript">
-
-        //************************************************************
-        //side navigation menu js
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-             
         }
 
-
-        //************************************************************
-        //function to call for modal box subscription
-
         function ShowSubscribeToSubscriptionModalBox() {
-            /* pop-up modal box */
             var x = document.getElementById("snackbarTickedSubscription");
             x.className = "show";
             setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
-
         }           
 
         function ShowUnsubscribeToSubscriptionModalBox() {
-            /* pop-up modal box */
             var x = document.getElementById("snackbarUntickedSubscription");
             x.className = "show";
             setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
         }
 
-        //************************************************************
-        //function to call for modal box notification
-
         function ShowSubscribeToNotificatonModalBox() {
-            /* pop-up modal box */
             var x = document.getElementById("snackbarTickedNotification");
             x.className = "show";
             setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
         }
 
         function ShowUnsubscribeToNotificatonModalBox() {
-            /* pop-up modal box */
             var x = document.getElementById("snackbarUntickedNotification");
             x.className = "show";
             setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
         }
-
-
-
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!--google icons-->
@@ -536,8 +462,6 @@
 </head>
 <body>
     <form id="idFormAccountPage" runat="server" style="display: inline; background-color: transparent;">
-
-        <%-- side menu options --%>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="classALinkLogo" href="#">
@@ -574,34 +498,20 @@
                 <asp:LoginStatus ID="idUserLoginStatus" runat="server" CssClass="CssClassIdUserLoginStatus"  LogoutText="[Logout]" LoginText="[Login]" LogoutAction="RedirectToLoginPage" />
             </div>
         </div>
-
-
-
-    
-        <%-- section left side div--%>
         <div id="idLeftDivBox" class="classLeftDivBox">
         </div>
-
-        <%-- section for centre div --%>
         <div id="idCentreDivBox" class="classCentreDivBox">
-            <%-- Page Header --%>
             <div id="idHeaderDiv" class="classHeaderDiv">
                 <label id="idLabelAppName" class="classLabelAppName">
                     <span class="material-icons">laptop</span>
                     <i class="classBrandName">JamesLaptop</i>
                 </label>
-
-                <%-- side menu icon --%>
                 <div class="classDivSideMenuComponentParent" onclick="openNav()">
                     <div class="classDivSideMenuComponent"></div>
                     <div class="classDivSideMenuComponent"></div>
                     <div class="classDivSideMenuComponent"></div>
                 </div>
             </div>
-    
-        
-
-            <%-- account page main content --%>
             <div class="classDivCheckoutPageMainContent">
                 <table class="classTableCheckoutPageMainContent">
                     <tr>
@@ -611,7 +521,6 @@
                     </tr>
                     <tr class="classTableTdProductFeatureMainContent">
                         <td class="classTableTdProductFeatureMainContent">   
-                        <%-- account page section (left) --%>
                             <table style="width: 100%;">
                                 <tr>
                                     <td>
@@ -624,7 +533,6 @@
                                         <label class="classLabelName"> 
                                             <strong>Name:</strong>
                                         </label>
-
                                         <label class="classLabelName2"> 
                                             John Michael
                                         </label>
@@ -635,7 +543,6 @@
                                         <label class="classLabelEmail">
                                             <strong>Email:</strong>
                                         </label>
-
                                         <label class="classLabelEmail2"> 
                                             jmichael@email.com
                                         </label>
@@ -646,21 +553,15 @@
                                         <label class="classLabelContactNo">
                                             <strong>Contact No.:</strong>
                                         </label>
-
                                         <label class="classLabelContactNo2">
                                             012-3456789
                                         </label>
                                     </td>
                                 </tr>
-                            
                             </table>
-                        </td>
-                
-                    <td>
-                    
-                            <div class="classDivProductFeaturesDescription">
-                            <%-- account page form section (right) --%>
-    
+                        </td>                
+                    <td>                    
+                            <div class="classDivProductFeaturesDescription">                                
                                 <table class="classTableCheckoutForm">
                                     <tr>
                                         <td>
@@ -668,7 +569,6 @@
                                     </tr>
                                     <tr>
                                         <td>
-
                                             <table class="classTableSubscriptionAndNotification">
                                                 <tr>
                                                     <td>
@@ -682,15 +582,12 @@
                                                             <asp:ListItem Text="True" Value="True" >True</asp:ListItem>
                                                             <asp:ListItem Text="False" Value="False">False</asp:ListItem>
                                                         </asp:DropDownList>
-
-
                                                         <div id="snackbarTickedSubscription" class="classDivSnackbarTickedSubscription">
                                                             <strong>
                                                                 <i class="material-icons" style="border:2px solid black; margin-right:5px; bottom:-5px; position:relative;">&#xe876;</i>  
                                                                 You have subscribe to our monthly newsletter.
                                                             </strong>
                                                         </div>
-
                                                         <div id="snackbarUntickedSubscription" class="classDivSnackbarUntickedSubscription">
                                                             <strong>
                                                                 <i class="material-icons" style="border:2px solid black; margin-right:5px; bottom:-5px; position:relative;">&#xe5cd;</i>
@@ -705,23 +602,18 @@
                                                             <strong>Notification:</strong>
                                                         </label>
                                                     </td>
-                                                    <td>
-                                                        <%-- insert code --%>
+                                                    <td>                                                        
                                                         <asp:DropDownList ID="idDropDownListNotification" CssClass="cssClassDropDownListNotification" runat="server" AutoPostBack="true"  OnSelectedIndexChanged="idDropDownListNotification_SelectedIndexChanged"  >
                                                             <asp:ListItem Selected="True" Text=""></asp:ListItem>
                                                             <asp:ListItem Text="True" Value="True">True</asp:ListItem>
                                                             <asp:ListItem Text="False" Value="False">False</asp:ListItem>
                                                         </asp:DropDownList>
-
-
-
                                                         <div id="snackbarTickedNotification" class="classDivSnackbarTickedNotification">
                                                             <strong>
                                                                 <i class="material-icons" style="border:2px solid black; margin-right:5px; bottom:-5px; position:relative;">&#xe876;</i>  
                                                                 You have subscribe to our weekly notification.
                                                             </strong>
                                                         </div>
-
                                                         <div id="snackbarUntickedNotification" class="classDivSnackbarUntickedNotification">
                                                             <strong>
                                                                 <i class="material-icons" style="border:2px solid black; margin-right:5px; bottom:-5px; position:relative;">&#xe5cd;</i>
@@ -731,30 +623,22 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                    
                                         </td>
                                     </tr>
                                 </table>
-    
-                            </div>
-                    
+                            </div>                  
                     </td>
                 </tr>
             </table>
         </div>
-
-
             <table style="width: 100%;">
                 <tr>
                     <td>
                         <br/>
-                        <%--<br/>
-                        <br/>--%>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                            <%-- Login Page Footer --%>
                             <div id="idDivFooter" class="classDivFooter">
                                 <footer>
                                     <label>
@@ -765,30 +649,9 @@
                     </td>
                 </tr>
             </table>
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <%-- section div right side --%>
-    <div id="idRightDivBox" class="classRightDivBox">
-    </div>
-
-   
+        <div id="idRightDivBox" class="classRightDivBox">
+        </div>
     </form>
 </body>
 </html>
