@@ -7,7 +7,6 @@
     <title>Checkout</title>
     <meta charset="utf-8" />
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -44,10 +43,10 @@
         }
 
         div.classDivSideMenuComponent {
-            width: 24px; /*35px*/
-            height: 3px; /*5px*/
+            width: 24px; 
+            height: 3px; 
             background-color: black;
-            margin: 3px; /*3px 0*/
+            margin: 3px; 
         }
 
         div.classDivSideMenuComponentParent {
@@ -60,16 +59,11 @@
             padding-bottom:1px;
             padding-left:1px; 
             padding-right:1px;
-            /*border-radius:1px 1px;*/
         }
 
         div.classDivSideMenuComponentParent:hover {
             background-color:lightgray;
         }
-
-        /* *********************************** */
-        /* style for side menu */
-        /* start */
 
         .sidenav {
             height: 100%;
@@ -115,7 +109,6 @@
             background-color: lightgray;
             color:navy;
             margin-left:5px;
-    
         }
 
         .sidenav .closebtn {
@@ -131,19 +124,10 @@
             .sidenav a {font-size: 18px;}
         }
 
-    
-
-        /* end */
-        /* style for side menu */
-        /* *********************************** */
-
         label.classLabelAppName2 {
             font-family: Calibri;
             font-size: 18px;
             margin-top:10px;
-            /*height:30px;*/
-            /*background-color:antiquewhite;*/
-            /*margin-left:10px;*/
         }
 
         i.classBrandName2 {
@@ -156,10 +140,8 @@
             height:auto;
             float:left;
             display:block;
-            /*border: 1px solid black;*/
             margin-top:10px;
             border-radius:10px;
-
         }
 
         table.classTableCheckoutPageMainContent {
@@ -169,8 +151,6 @@
         }
 
         table.classTableCheckoutPageMainContent td {
-            /*border: 1px solid black;*/
-            
         }
 
         .classTableTdPageHeading {
@@ -183,28 +163,22 @@
         .classTableTdProductFeatureMainContent {
              width:40%;
              padding-top:0px;
-             /*text-align:start;*/
             vertical-align:top; 
         }
 
          div.classDivProductFeaturesDescription {
-             /*border: 1px solid black;*/
              width:100%;
-             height: 400px; /*450px*/
+             height: 400px; 
              overflow:scroll;
          }
-
 
          img.classImgHeroImage {
             width:100%;
             height:170px;
-            /*border: 1px solid black;
-            border-radius:10px;*/
             float:left;
             margin-right:0px;
             margin-top:0px;
             margin-bottom:5px;
-            /*box-shadow:2px 2px lightblue;*/
          }
 
          .classLabelPriceTag {
@@ -214,8 +188,6 @@
                 font-family:Calibri;
                 font-size:16px;
                 margin-left:5px;
-               /* margin-top:15px;*/
-                /*display:block;*/
          }
 
         .classlabelQuantity {
@@ -245,7 +217,6 @@
             opacity:0.8;
         }
 
-
         .classQuantityTextBox {
             font-family: Calibri;
             font-size: 16px;
@@ -255,7 +226,6 @@
             border-left:none;
             border-right:none;
             border-top:none;
-
         }
 
         .classDeductButton {
@@ -284,7 +254,6 @@
             font-family: Calibri;
             font-size: 16px;
             float:right;
-        
         }
 
         .classLabelShippingFee {
@@ -308,7 +277,6 @@
             font-size: 16px;
             font-weight:bold;
             float: left;
-            
         }
 
         .classTextBoxTotalCost {
@@ -321,26 +289,6 @@
             width:fit-content;
             text-align:right;
         }
-
-        /*span.fa fa-cc-visa {
-            color:navy; 
-            font-size:16px;
-        }
-
-        span.fa fa-cc-amex {
-            color:blue; 
-            font-size:16px;
-        }
-
-        span.fa fa-cc-mastercard {
-            color:red; 
-            font-size:16px;
-        }
-
-        span.fa fa-cc-discover {
-            color:orange; 
-            font-size:16px;
-        }*/
 
         label.classLabelPayment {
             font-family: Calibri;
@@ -363,7 +311,6 @@
             font-size:16px;
             border: 1px solid black;
             border-radius:5px;
-
         }
 
         label.classLabelCreditCardNumber {
@@ -430,7 +377,6 @@
         label.classLabelFullName {
             font-family: Calibri;
             font-size:16px;
-        
         }
 
         input.classFullNameTextBox {
@@ -538,7 +484,6 @@
             opacity:0.9;
         }
 
-
         input.classButtonCancel {
             font-family:Calibri;
             font-size:16px;
@@ -553,7 +498,6 @@
 
         input.classButtonCancel:hover {
             background-color:#f0f5f5;
-            /*opacity:0.9;*/
         }
 
         .classTdRowBillingAddress {
@@ -566,29 +510,23 @@
 
         .classDivFooter {
             border-top: 1px solid black;
-            /*position: fixed;*/
             bottom: 0;
             width: inherit;
             min-width: 1000px;
             height: 40px;
-            /*background-color: aliceblue;*/
             font-family: Calibri;
             font-size: 11px;
-    
         }
 
         div.classDivLogoutOption {
             width:fit-content;
             height:fit-content;
-            /*border: 1px solid black;*/
         }
 
         .CssClassIdUserLoginStatus {
-                /*float:right;*/
                 font-family:Calibri;
                 font-size:16px;
                 color:black;
-                /*border: 1px solid black;*/
                 padding-left:1px;
                 padding-right:1px;
                 padding-top:1px;
@@ -601,40 +539,21 @@
         .CssClassIdUserLoginStatus:hover {
             text-decoration:underline;
         }
-        
-
-        /*.abc {
-        width:fit-content;
-        border:1px solid black;
-        }*/
-
     </style>
     <script type="text/javascript">
-
-        //***********************************
-        //side navigation menu js
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            
         }
-
-
-        
-
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!--google icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />    
 </head>
 <body>
     <form id="idFormDetailsForCheckout" runat="server" style="display: inline; background-color: transparent;">    
-
-        <%-- side menu options --%>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="classALinkLogo" href="#">
@@ -671,34 +590,20 @@
                 <asp:LoginStatus ID="idUserLoginStatus" runat="server" CssClass="CssClassIdUserLoginStatus"  LogoutText="[Logout]" LoginText="[Login]" LogoutAction="RedirectToLoginPage" />
             </div>
         </div>
-
-
-    
-        <%-- section left side div--%>
         <div id="idLeftDivBox" class="classLeftDivBox">
         </div>
-
-        <%-- section for centre div --%>
         <div id="idCentreDivBox" class="classCentreDivBox">
-            <%-- Page Header --%>
             <div id="idHeaderDiv" class="classHeaderDiv">
                 <label id="idLabelAppName" class="classLabelAppName">
                     <span class="material-icons">laptop</span>
                     <i class="classBrandName">JamesLaptop</i>
                 </label>
-
-                <%-- side menu icon --%>
                 <div class="classDivSideMenuComponentParent" onclick="openNav()">
                     <div class="classDivSideMenuComponent"></div>
                     <div class="classDivSideMenuComponent"></div>
                     <div class="classDivSideMenuComponent"></div>
                 </div>
             </div>
-    
-    
-    
-
-            <%-- checkout page main content --%>
             <div class="classDivCheckoutPageMainContent">
                 <table class="classTableCheckoutPageMainContent">
                     <tr>
@@ -708,7 +613,6 @@
                     </tr>
                     <tr class="classTableTdProductFeatureMainContent">
                         <td class="classTableTdProductFeatureMainContent">    
-                        <%-- checkout page description section (left) --%>
                             <table style="width: 100%;">
                                 <tr>
                                     <td>
@@ -728,76 +632,51 @@
                                         <input id="idAddButton" class="classAddButton" type="button" onclick="IncrementQuantity()" value="+" />
                                         <input id="idQuantityTextBox" name="nameQuantityTextBox" class="classQuantityTextBox" type="text" value="1"  readonly="true" />
                                         <input id="idDeductButton" class="classDeductButton" onclick="DecrementQuantity()" type="button" value="-" />
-                                
                                         <script type="text/javascript">
-
                                             function IncrementQuantity() {
                                                 var currentQuantity;
-                                                currentQuantity = 0
-
+                                                currentQuantity = 0;
                                                 currentQuantity = parseInt(document.getElementById('idQuantityTextBox').value);
                                                 currentQuantity = currentQuantity + 1;
                                                 document.getElementById('idQuantityTextBox').value = currentQuantity.toString();
-
-                                                //increment product price
                                                 var currentProductPrice = document.getElementById('idLabelProductPrice2').textContent;
                                                 currentProductPrice = currentProductPrice.trim();
                                                 const arraycurrentProductPrice = currentProductPrice.split(" ");
                                                 var doublecurrentProductPrice = parseFloat(arraycurrentProductPrice[1]);
                                                 doublecurrentProductPrice = 2500 * currentQuantity;
-
-                                                document.getElementById('idLabelProductPrice2').textContent = "RM " + doublecurrentProductPrice.toString() + ".00";
-
-                                                //increment total cost
+                                                document.getElementById('idLabelProductPrice2').textContent = "RM " + doublecurrentProductPrice.toString() + ".00";                                  
                                                 var currentTotalPrice = document.getElementById('idTextBoxTotalCost').textContent;
                                                 currentTotalPrice = currentTotalPrice.trim();
                                                 const arrayCurrentTotalPrice = currentTotalPrice.split(" ");
                                                 var doublecurrentTotalPrice = parseFloat(arrayCurrentTotalPrice[1]);
                                                 doublecurrentTotalPrice = 100 + doublecurrentProductPrice;
-
                                                 document.getElementById('idTextBoxTotalCost').value = "RM " + doublecurrentTotalPrice.toString() + ".00"; 
-
                                             }
 
-
                                             function DecrementQuantity() {
-
                                                 var currentQuantity;
                                                 currentQuantity = 0
-
                                                 currentQuantity = parseInt(document.getElementById('idQuantityTextBox').value);
-
                                                 if (currentQuantity >= 2) {
                                                     currentQuantity = currentQuantity - 1;
                                                     document.getElementById('idQuantityTextBox').value = currentQuantity.toString();
                                                 } else {
                                                     document.getElementById('idQuantityTextBox').value = "1";
                                                 }
-
-                                                //decrement product price
                                                 var currentProductPrice = document.getElementById('idLabelProductPrice2').textContent;
                                                 currentProductPrice = currentProductPrice.trim();
                                                 const arraycurrentProductPrice = currentProductPrice.split(" ");
                                                 var doublecurrentProductPrice = parseFloat(arraycurrentProductPrice[1]);
                                                 doublecurrentProductPrice = 2500 * currentQuantity;
-
                                                 document.getElementById('idLabelProductPrice2').textContent = "RM " + doublecurrentProductPrice.toString() + ".00";
-
-                                                //decrement total cost
                                                 var currentTotalPrice = document.getElementById('idTextBoxTotalCost').textContent;
                                                 currentTotalPrice = currentTotalPrice.trim();
                                                 const arrayCurrentTotalPrice = currentTotalPrice.split(" ");
                                                 var doublecurrentTotalPrice = parseFloat(arrayCurrentTotalPrice[1]);
                                                 doublecurrentTotalPrice = 100 + doublecurrentProductPrice;
-
                                                 document.getElementById('idTextBoxTotalCost').value = "RM " + doublecurrentTotalPrice.toString() + ".00"; 
-
                                             }
-
-
                                         </script>
-                                
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -805,7 +684,6 @@
                                         <label class="classLabelProductPrice">
                                             Total Product Price:
                                         </label>
-                                    
                                         <label id="idLabelProductPrice2" class="classLabelProductPrice2">
                                             RM 2500.00
                                         </label>
@@ -816,7 +694,6 @@
                                         <label class="classLabelShippingFee">
                                             Shipping Fee:
                                         </label>
-
                                         <label class="classLabelShippingFee2">
                                             RM 100.00
                                         </label>
@@ -827,31 +704,12 @@
                                         <label class="classLabelTotalCost">
                                             <strong>Total Fee:</strong>
                                         </label>
-
-                                        <%--<label id="idTextBoxTotalCost" name="nameLabelTotalCost2" class="classTextBoxTotalCost">
-                                            <strong>RM 2600.00</strong>
-                                        </label>--%>
-                                   
                                         <input id="idTextBoxTotalCost" name="nameTextBoxTotalCost" class="classTextBoxTotalCost" type="text" value="RM 2600.00"  readonly="true" />
-
-
-
                                     </td>
                                 </tr>
-                                <%--<tr>
-                                    <td>
-                                        <span class="fa fa-cc-visa" style="color:navy; font-size:16px;"></span>
-                                        <span class="fa fa-cc-amex" style="color:blue; font-size:16px;"></span>
-                                        <span class="fa fa-cc-mastercard" style="color:red; font-size:16px;"></span>
-                                        <span class="fa fa-cc-discover" style="color:orange; font-size:16px;"></span>
-                                    </td>
-                                </tr>--%>
                             </table>
                         </td>
                         <td>
-                            <%--<form id="idFormDetailsForCheckout" runat="server" style="display: inline; background-color: transparent;">--%>
-                                <div class="classDivProductFeaturesDescription">
-                                <%-- checkout page form section (right) --%>
                                     <table class="classTableCheckoutForm">
                                         <tr>
                                             <td>
@@ -1020,9 +878,6 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <%--<label class="classLabelSameadr">
-                                                    <input type="checkbox" class="classInputSameadr" name="sameadr" /> Shipping address same as billing 
-                                                </label>--%>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1035,30 +890,13 @@
                                             <td>
                                                 <asp:Button ID="idButtonCancel" CssClass="classButtonCancel" runat="server" Text="Cancel" CausesValidation="False" OnClick="idButtonCancel_Click" />  
                                             </td>
-                                    
                                         </tr>
-                                
                                     </table>
-
-
-                        
                                 </div>
-                            <%--</form>--%>
                         </td>
                     </tr>
-                        
-                    
-                        
-
-                </table>
-             
-
-            
+                </table>    
             </div>
-        
-        
-       
-
             <table style="width: 100%;">
                 <tr>
                     <td>
@@ -1069,11 +907,9 @@
                 </tr>
                 <tr>
                     <td>
-                            <%-- Login Page Footer --%>
                             <div id="idDivFooter" class="classDivFooter">
                                 <footer>
                                     <label>
-                                        <!--<h6>&copy; Student Registration Application</h6>-->
                                         <i><strong>&copy; James Laptop eCommerce Website</strong></i>
                                     </label>
                                 </footer>
@@ -1081,35 +917,9 @@
                     </td>
                 </tr>
             </table>
-
-
-       
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <%-- section div right side --%>
         <div id="idRightDivBox" class="classRightDivBox">
         </div>
-
     </form>
-    
-
 </body>
 </html>
