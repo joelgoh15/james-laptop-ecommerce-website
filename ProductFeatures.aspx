@@ -305,29 +305,18 @@
         }
     </style>
     <script type="text/javascript"> 
-
-        //***********************************
-        //side navigation menu js
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            
         }
-
-
     </script>
-    <!--google icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
 <body>
     <form id="idFormProductFeaturesPage" runat="server" style="display: inline; background-color: transparent;">
-
-
-        <%-- side menu options --%>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="classALinkLogo" href="#">
@@ -365,32 +354,20 @@
             </div>
         </div>
     </form>
-
-    
-            <%-- section left side div--%>
             <div id="idLeftDivBox" class="classLeftDivBox">
             </div>
-
-            <%-- section for centre div --%>
             <div id="idCentreDivBox" class="classCentreDivBox">
-        
-                <%-- Page Header --%>
                 <div id="idHeaderDiv" class="classHeaderDiv">
                     <label id="idLabelAppName" class="classLabelAppName">
                         <span class="material-icons">laptop</span>
                         <i class="classBrandName">JamesLaptop</i>
                     </label>
-
-                    <%-- side menu icon --%>
                     <div class="classDivSideMenuComponentParent" onclick="openNav()">
                         <div class="classDivSideMenuComponent"></div>
                         <div class="classDivSideMenuComponent"></div>
                         <div class="classDivSideMenuComponent"></div>
                     </div>
                 </div>
-    
-
-                <%-- product features main content --%>
                 <div class="classDivProductFeatureMainContent">
                     <table class="classTableProductFeatureMainContent" >
                         <tr>
@@ -407,19 +384,14 @@
                                 </label>
                                 <br/><br/>
                                 <input id="idButtonBuyNow" class="classButtonBuyNow" type="button" value="Buy Now" />
-                        
                                 <script type="text/javascript">
-
                                     document.getElementById("idButtonBuyNow").onclick = function () {
                                         location.href = "Checkout.aspx";
                                     };
                                 </script>
-
                             </td>
                             <td>
-                                <%-- product features description section --%>
                                 <div class="classDivProductFeaturesDescription">
-          
                                     <button class="accordion"><strong>Feature 1: Great Display</strong></button>
                                     <div class="panel">
                                           <table class="classTableFeature" >
@@ -430,11 +402,9 @@
                                                   <td class="classTableTdFeatureCol2">
                                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ex ac neque porttitor tincidunt ut et purus. Nam tincidunt, odio fermentum laoreet tincidunt, nibh diam sollicitudin nisl, sed eleifend risus urna sit amet est.
                                                   </td>
-                                        
                                               </tr>
                                           </table>
                                     </div>
-
                                     <button class="accordion"><strong>Feature 2: Great Laptop Specification</strong></button>
                                     <div class="panel">
                                       <table class="classTableFeature" >
@@ -445,11 +415,9 @@
                                                 <td class="classTableTdFeatureCol2">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ex ac neque porttitor tincidunt ut et purus. Nam tincidunt, odio fermentum laoreet tincidunt, nibh diam sollicitudin nisl, sed eleifend risus urna sit amet est.
                                                 </td>
-      
                                             </tr>
                                         </table>
                                     </div>
-
                                     <button class="accordion"><strong>Feature 3: Environmental Friendly Material</strong></button>
                                     <div class="panel">
                                         <table class="classTableFeature" >
@@ -460,19 +428,12 @@
                                               <td class="classTableTdFeatureCol2">
                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ex ac neque porttitor tincidunt ut et purus. Nam tincidunt, odio fermentum laoreet tincidunt, nibh diam sollicitudin nisl, sed eleifend risus urna sit amet est.
                                               </td>
-      
                                           </tr>
                                       </table>
                                     </div>
-
-
-
                                     <script type="text/javascript">
-                                        //***********************************
-                                        //accordion - product description js
                                         var acc = document.getElementsByClassName("accordion");
                                         var i;
-
                                         for (i = 0; i < acc.length; i++) {
                                             acc[i].addEventListener("click", function () {
                                                 this.classList.toggle("active");
@@ -485,46 +446,20 @@
                                             });
                                         }
                                     </script>
-                               
-
-
                                 </div>
                             </td>
                         </tr>
-                 
                     </table>
                 </div>
-
-
-        
-
-            <%-- footer --%>
             <div id="idDivFooter" class="classDivFooter">
                 <footer>
                     <label>
-                        <!--<h6>&copy; Student Registration Application</h6>-->
                         <i><strong>&copy; James Laptop eCommerce Website</strong></i>
                     </label>
                 </footer>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-        <%-- section div right side --%>
         <div id="idRightDivBox" class="classRightDivBox">
         </div>
-
-
-
-   
-    
 </body>
 </html>
