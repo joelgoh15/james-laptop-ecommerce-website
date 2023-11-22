@@ -15,39 +15,25 @@ namespace Portfolio2_3
             {
                 string connectionString;
                 connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["AppDBConnectionString"].ConnectionString;
-
-                //details for user subscription
                 string userSubscription;
                 userSubscription = string.Empty;
-
                 using (AppDB_DataClassesDataContext appDB_DataClassesDataContext = new AppDB_DataClassesDataContext(connectionString))
                 {
                     userSubscription = (from subscriptionNotificationTable in appDB_DataClassesDataContext.SubscriptionNotificationTables
                                                                 where subscriptionNotificationTable.Id == 1
                                                                 select subscriptionNotificationTable.SubscriptionStatus).FirstOrDefault();
-
                     idLabelUserSubscriptionStatusDb.Text = userSubscription;
                 }
-
-
-
-                //details for user notification
                 string userNotification;
                 userNotification = string.Empty;
-
                 using (AppDB_DataClassesDataContext appDB_DataClassesDataContext = new AppDB_DataClassesDataContext(connectionString))
                 {
                     userNotification = (from subscriptionNotificationTable in appDB_DataClassesDataContext.SubscriptionNotificationTables
                                         where subscriptionNotificationTable.Id == 1
                                         select subscriptionNotificationTable.NotificationStatus).FirstOrDefault();
-
                     idLabelUserNotficationStatusDb.Text= userNotification;
                 }
             }
         }
-
-
-
-
-    }//end-class
-}//end-namespace
+    }
+}
