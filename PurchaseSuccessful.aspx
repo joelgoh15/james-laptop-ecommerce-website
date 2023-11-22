@@ -7,7 +7,6 @@
     <title>Purchase Successful</title>
     <meta charset="utf-8" />
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -60,7 +59,6 @@
             padding-bottom:1px;
             padding-left:1px; 
             padding-right:1px;
-            /*border-radius:1px 1px;*/
         }
 
         div.classDivSideMenuComponentParent:hover {
@@ -68,15 +66,11 @@
         }
 
         div.classDivSideMenuComponent {
-            width: 24px; /*35px*/
-            height: 3px; /*5px*/
+            width: 24px; 
+            height: 3px; 
             background-color: black;
-            margin: 3px; /*3px 0*/
+            margin: 3px; 
         }
-
-        /* *********************************** */
-        /* style for side menu */
-        /* start */
 
         .sidenav {
             height: 100%;
@@ -138,19 +132,10 @@
             .sidenav a {font-size: 18px;}
         }
 
-       
-
-        /* end */
-        /* style for side menu */
-        /* *********************************** */
-
         label.classLabelAppName2 {
             font-family: Calibri;
             font-size: 18px;
             margin-top:10px;
-            /*height:30px;*/
-            /*background-color:antiquewhite;*/
-            /*margin-left:10px;*/
         }
 
         i.classBrandName2 {
@@ -170,12 +155,10 @@
 
         table.classTableCheckoutPageMainContent {
             width: 100%;
-            /*border: 1px solid black;*/
             border-radius:10px;
         }
 
         table.classTableCheckoutPageMainContent td {
-            /*border: 1px solid black;*/
         }
 
         .classTableTdPageHeading {
@@ -205,7 +188,6 @@
             padding: 10px;
             border: 1px solid black;
             border-radius:10px;
-            
             display:inline-block;
 
         }
@@ -215,20 +197,13 @@
             font-size:16px;
         }
 
-
-
-        /* *********************************** */
-        /* style for social media buttons */
-        /* start */
         .fa {
-          /*padding: 20px;*/
-          padding:4px; /*12px*/
+          padding:4px; 
           font-size: 16px;
-          /*width: 6px;*/ /*50px*/
           width:20px;
           text-align: center;
           text-decoration: none;
-          margin: 2px 2px; /*5px 2px*/
+          margin: 2px 2px; 
         }
 
         .fa:hover {
@@ -239,7 +214,6 @@
             background: #bb0000;
             color: white;
          }
-
 
          .fa-facebook {
               background: #3B5998;
@@ -256,11 +230,6 @@
               color: white;
          }
 
-        /* end */
-        /* style for social media buttons */
-        /* *********************************** */
-
-
         .classDivFooter {
             border-top: 1px solid black;
             position: fixed;
@@ -268,7 +237,6 @@
             width: inherit;
             min-width: 1000px;
             height: 40px;
-            /*background-color: aliceblue;*/
             font-family: Calibri;
             font-size: 11px;
             width:80%;
@@ -279,15 +247,12 @@
         div.classDivLogoutOption {
             width:fit-content;
             height:fit-content;
-            /*border: 1px solid black;*/
         }
 
         .CssClassIdUserLoginStatus {
-            /*float:right;*/
             font-family:Calibri;
             font-size:16px;
             color:black;
-            /*border: 1px solid black;*/
             padding-left:1px;
             padding-right:1px;
             padding-top:1px;
@@ -300,24 +265,15 @@
         .CssClassIdUserLoginStatus:hover {
             text-decoration:underline;
         }
-
-
     </style>
     <script type="text/javascript">
-
-        //************************************************************
-        //side navigation menu js
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            
         }
-
-
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
