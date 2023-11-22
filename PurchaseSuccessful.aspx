@@ -280,8 +280,6 @@
 </head>
 <body>
     <form id="idFormPurchaseSuccessfulPage" runat="server" style="display: inline; background-color: transparent;">
-
-        <%-- side menu options --%>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="classALinkLogo" href="#">
@@ -318,39 +316,20 @@
                 <asp:LoginStatus ID="idUserLoginStatus" runat="server" CssClass="CssClassIdUserLoginStatus"  LogoutText="[Logout]" LoginText="[Login]" LogoutAction="RedirectToLoginPage" />
             </div>
         </div>
-
-
-
-
-    
-
-        <%-- section left side div--%>
         <div id="idLeftDivBox" class="classLeftDivBox">
         </div>
-
-
-        <%-- section for centre div --%>
         <div id="idCentreDivBox" class="classCentreDivBox">
-        
-            <%-- Page Header --%>
             <div id="idHeaderDiv" class="classHeaderDiv">
                 <label id="idLabelAppName" class="classLabelAppName">
                     <span class="material-icons">laptop</span>
                     <i class="classBrandName">JamesLaptop</i>
                 </label>
-
-                <%-- side menu icon --%>
                 <div class="classDivSideMenuComponentParent" onclick="openNav()">
                     <div class="classDivSideMenuComponent"></div>
                     <div class="classDivSideMenuComponent"></div>
                     <div class="classDivSideMenuComponent"></div>
                 </div>
             </div>
-    
-    
-        
-
-            <%-- purchase successful page main content --%>
             <div class="classDivCheckoutPageMainContent">
                 <table class="classTableCheckoutPageMainContent">
                     <tr>
@@ -394,8 +373,6 @@
                         </td>
                     </tr>
                 </table>
-
-                <%-- footer design about page --%>
                 <div id="idDivFooter" class="classDivFooter">
                     <footer>
                         <label>
@@ -403,18 +380,10 @@
                         </label>
                     </footer>
                 </div>
-
-
             </div>
         </div>
-
-
-
-        <%-- section div right side --%>
         <div id="idRightDivBox" class="classRightDivBox">
-        </div>
-
-    
+        </div>    
     </form>
 </body>
 </html>
