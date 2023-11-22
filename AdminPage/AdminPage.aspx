@@ -7,7 +7,6 @@
     <title>Admin Page</title>
     <meta charset="utf-8" />
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -53,7 +52,6 @@
             padding-bottom:1px;
             padding-left:1px; 
             padding-right:1px;
-            /*border-radius:1px 1px;*/
         }
 
         div.classDivSideMenuComponentParent:hover {
@@ -61,15 +59,11 @@
         }
 
         div.classDivSideMenuComponent {
-            width: 24px; /*35px*/
-            height: 3px; /*5px*/
+            width: 24px; 
+            height: 3px; 
             background-color: black;
-            margin: 3px; /*3px 0*/
+            margin: 3px; 
         }
-
-        /* *********************************** */
-        /* style for side menu */
-        /* start */
 
         .sidenav {
             height: 100%;
@@ -131,17 +125,10 @@
             .sidenav a {font-size: 18px;}
         }
 
-        /* end */
-        /* style for side menu */
-        /* *********************************** */
-
         label.classLabelAppName2 {
             font-family: Calibri;
             font-size: 18px;
             margin-top:10px;
-            /*height:30px;*/
-            /*background-color:antiquewhite;*/
-            /*margin-left:10px;*/
         }
 
         i.classBrandName2 {
@@ -160,16 +147,12 @@
             overflow:scroll;
         }
 
-        /* important */
+       
         table.classTableCheckoutPageMainContent {
             width: 100%;
-            /*border: 1px solid black;
-            border-radius:10px;*/
         }
 
-        /* important */
         table.classTableCheckoutPageMainContent td {
-            /*border: 1px solid black;*/
         }
 
         .classTableTdPageHeading {
@@ -200,7 +183,6 @@
             width: inherit;
             min-width: 1000px;
             height: 40px;
-            /*background-color: aliceblue;*/
             font-family: Calibri;
             font-size: 11px;
         }
@@ -208,15 +190,12 @@
         div.classDivLogoutOption {
             width:fit-content;
             height:fit-content;
-            /*border: 1px solid black;*/
         }
 
         .CssClassIdUserLoginStatus {
-            /*float:right;*/
             font-family:Calibri;
             font-size:16px;
             color:black;
-            /*border: 1px solid black;*/
             padding-left:1px;
             padding-right:1px;
             padding-top:1px;
@@ -233,32 +212,22 @@
         .cssClassGridViewUserPaymentDetails {
             border: 1px solid black;
             border-radius:20px;
-            /*border-color: #CCCCCC;*/
         }
-
     </style>
     <script type="text/javascript">
-
-        //************************************************************
-        //side navigation menu js
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-
         }
-
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
-    
     <form id="form1" runat="server" style="display: inline; background-color: transparent;">
-
-    <%-- side menu options --%>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="classALinkLogo" href="#">
@@ -295,34 +264,20 @@
             <asp:LoginStatus ID="idUserLoginStatus" runat="server" CssClass="CssClassIdUserLoginStatus"  LogoutText="[Logout]" LoginText="[Login]" LogoutAction="RedirectToLoginPage" />
         </div>
     </div>
-
-
-    <%-- section div left side --%>
     <div id="idLeftDivBox" class="classLeftDivBox">
     </div>
-
-
-
-    <%-- section div centre --%>
-    <div id="idCentreDivBox" class="classCentreDivBox">
-    
-        <%-- Page Header --%>
+    <div id="idCentreDivBox" class="classCentreDivBox">        
         <div id="idHeaderDiv" class="classHeaderDiv">
             <label id="idLabelAppName" class="classLabelAppName">
                 <span class="material-icons">laptop</span>
                 <i class="classBrandName">JamesLaptop</i>
-            </label>
-
-            <%-- side menu icon --%>
+            </label>          
             <div class="classDivSideMenuComponentParent" onclick="openNav()">
                 <div class="classDivSideMenuComponent"></div>
                 <div class="classDivSideMenuComponent"></div>
                 <div class="classDivSideMenuComponent"></div>
             </div>
-        </div>
-
-
-        <%-- about page main content --%>
+        </div>     
         <div class="classDivCheckoutPageMainContent">
             <table class="classTableCheckoutPageMainContent">
                 <tr>
@@ -337,8 +292,7 @@
                     <td>
                         <label class="classLabelUserSubscriptionStatus">
                            <strong>User Subscription Status:</strong>
-                        </label>
-                        
+                        </label>                   
                         <asp:Label ID="idLabelUserSubscriptionStatusDb" CssClass="classLabelUserSubscriptionStatus" runat="server" Text="Label"></asp:Label>
                     </td>
                 </tr>
@@ -347,7 +301,6 @@
                         <label class="classLabelUserNotficationStatus">
                            <strong>User Notification Status:</strong>
                         </label>
-
                         <asp:Label ID="idLabelUserNotficationStatusDb" CssClass="classLabelUserNotficationStatus" runat="server" Text="Label"></asp:Label>
                     </td>
                 </tr>
@@ -376,23 +329,15 @@
                                 <asp:BoundField DataField="TotalFee" HeaderText="Total Fee" SortExpression="TotalFee"></asp:BoundField>
                             </Columns>
                             <FooterStyle BackColor="#CCCC99" ForeColor="Black"></FooterStyle>
-
                             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White"></HeaderStyle>
-
                             <PagerStyle HorizontalAlign="Right" BackColor="White" ForeColor="Black"></PagerStyle>
-
                             <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White"></SelectedRowStyle>
-
                             <SortedAscendingCellStyle BackColor="#F7F7F7"></SortedAscendingCellStyle>
-
                             <SortedAscendingHeaderStyle BackColor="#4B4B4B"></SortedAscendingHeaderStyle>
-
                             <SortedDescendingCellStyle BackColor="#E5E5E5"></SortedDescendingCellStyle>
-
                             <SortedDescendingHeaderStyle BackColor="#242121"></SortedDescendingHeaderStyle>
                         </asp:GridView>
-                        <asp:SqlDataSource ID="idSqlDataSourceUserPaymentDetails" runat="server" ConnectionString='<%$ ConnectionStrings:AppDBConnectionString %>' SelectCommand="SELECT Id, DateTime, NameOnCard, CreditCardNo, ExpMonth, CVV, ExpYear, LaptopQuantity, TotalFee FROM CheckoutTable"></asp:SqlDataSource>
-                        
+                        <asp:SqlDataSource ID="idSqlDataSourceUserPaymentDetails" runat="server" ConnectionString='<%$ ConnectionStrings:AppDBConnectionString %>' SelectCommand="SELECT Id, DateTime, NameOnCard, CreditCardNo, ExpMonth, CVV, ExpYear, LaptopQuantity, TotalFee FROM CheckoutTable"></asp:SqlDataSource>    
                     </td>
                 </tr>
                 <tr>
@@ -421,23 +366,15 @@
                                 <asp:BoundField DataField="TotalFee" HeaderText="Total Fee" SortExpression="TotalFee"></asp:BoundField>
                             </Columns>
                             <FooterStyle BackColor="#CCCC99" ForeColor="Black"></FooterStyle>
-
                             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White"></HeaderStyle>
-
                             <PagerStyle HorizontalAlign="Right" BackColor="White" ForeColor="Black"></PagerStyle>
-
                             <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White"></SelectedRowStyle>
-
                             <SortedAscendingCellStyle BackColor="#F7F7F7"></SortedAscendingCellStyle>
-
                             <SortedAscendingHeaderStyle BackColor="#4B4B4B"></SortedAscendingHeaderStyle>
-
                             <SortedDescendingCellStyle BackColor="#E5E5E5"></SortedDescendingCellStyle>
-
                             <SortedDescendingHeaderStyle BackColor="#242121"></SortedDescendingHeaderStyle>
                         </asp:GridView>
                         <asp:SqlDataSource ID="idSqlDataSourceUserBillingAddressDetails" runat="server" ConnectionString='<%$ ConnectionStrings:AppDBConnectionString %>' SelectCommand="SELECT Id, DateTime, FullName, Email, Address, City, ZipCode, State, LaptopQuantity, TotalFee FROM CheckoutTable"></asp:SqlDataSource>
-                        
                     </td>
                 </tr>
                 <tr>
@@ -445,9 +382,6 @@
                 </tr>
             </table>
         </div>
-
-
-        <%-- footer design about page --%>
         <div id="idDivFooter" class="classDivFooter">
             <footer>
                 <label>
@@ -455,25 +389,9 @@
                 </label>
             </footer>
         </div>
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <%-- section div right side --%>
     <div id="idRightDivBox" class="classRightDivBox">
     </div>
-
-        </form>
+    </form>
 </body>
 </html>
