@@ -7,7 +7,6 @@
     <title>Home</title>
     <meta charset="utf-8" />
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -18,7 +17,6 @@
             float: left;
             margin-left: 100px;
             margin-right: 100px;
-   
         }
 
         div.classRightDivBox {
@@ -46,10 +44,10 @@
         }
 
         div.classDivSideMenuComponent {
-            width: 24px; /*35px*/
-            height: 3px; /*5px*/
+            width: 24px; 
+            height: 3px; 
             background-color: black;
-            margin: 3px; /*3px 0*/
+            margin: 3px; 
         }
 
         div.classDivSideMenuComponentParent {
@@ -62,16 +60,11 @@
             padding-bottom:1px;
             padding-left:1px; 
             padding-right:1px;
-            /*border-radius:1px 1px;*/
         }
 
         div.classDivSideMenuComponentParent:hover {
             background-color:lightgray;
         }
-
-        /* *********************************** */
-        /* style for side menu */
-        /* start */
 
         .sidenav {
             height: 100%;
@@ -133,17 +126,10 @@
             .sidenav a {font-size: 18px;}
         }
 
-        /* end */
-        /* style for side menu */
-        /* *********************************** */
-
         label.classLabelAppName2 {
             font-family: Calibri;
             font-size: 18px;
             margin-top:10px;
-            /*height:30px;*/
-            /*background-color:antiquewhite;*/
-            /*margin-left:10px;*/
         }
 
         i.classBrandName2 {
@@ -156,7 +142,6 @@
             height:auto;
             float:left;
             display:block;
-            /*border: 1px solid black;*/
             margin-top:10px;
             border-radius:10px;
         }
@@ -170,7 +155,6 @@
             height:300px;
             border: 1px solid black;
             border-radius:10px;
-    
         }
 
         td.classTdHeroImage {
@@ -179,12 +163,12 @@
 
         label.classLabelImageHeading {
             font-family:Calibri;
-            font-size:32px; /*24px*/
+            font-size:32px; 
         }
 
         label.classLabelImageSubHeading {
             font-family:Calibri;
-            font-size:24px; /*18px*/
+            font-size:24px; 
         }
 
         td.classTdHeroImageDetails {
@@ -196,35 +180,28 @@
             border: 1px solid black;
             border-radius:10px;
             color: white;
-            padding: 7px 24px; /*15px 32px*/
+            padding: 7px 24px; 
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            /*margin: 4px 2px;*/
             margin-right:2px;
             cursor: pointer;
-        
-    
         }
 
         .classButtonBuyNow:hover {
             opacity:0.9;
-        
         }
 
-
         .classButtonLearnMore {
-            /*background-color: #4CAF50;*/
             border: 2px solid #4CAF50;
             border-radius:10px;
             color: #4CAF50;
-            padding: 7px 24px; /*15px 32px*/
+            padding: 7px 24px; 
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            /*margin: 4px 2px;*/
             margin-right:2px;
             cursor: pointer;
         }
@@ -240,7 +217,6 @@
             width: inherit;
             min-width: 1000px;
             height: 40px;
-            /*background-color: aliceblue;*/
             font-family: Calibri;
             font-size: 11px;
         }
@@ -248,15 +224,12 @@
         div.classDivLogoutOption {
             width:fit-content;
             height:fit-content;
-            /*border: 1px solid black;*/
         }
 
         .CssClassIdUserLoginStatus {
-            /*float:right;*/
             font-family:Calibri;
             font-size:16px;
             color:black;
-            /*border: 1px solid black;*/
             padding-left:1px;
             padding-right:1px;
             padding-top:1px;
@@ -269,10 +242,8 @@
         .CssClassIdUserLoginStatus:hover {
             text-decoration:underline;
         }
-
     </style>
     <script type="text/javascript">
-
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
         }
@@ -280,16 +251,11 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
-
     </script>
-    <!--google icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
 <body>
     <form id="idFormHomePage" runat="server" style="display: inline; background-color: transparent;">
-
-        <%-- side menu options --%>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="classALinkLogo" href="#">
@@ -326,38 +292,20 @@
                 <asp:LoginStatus ID="idUserLoginStatus" runat="server" CssClass="CssClassIdUserLoginStatus"  LogoutText="[Logout]" LoginText="[Login]" LogoutAction="RedirectToLoginPage" />
             </div>
         </div>
-
-
-
-
-
-    
-        <%-- section left side div--%>
         <div id="idLeftDivBox" class="classLeftDivBox">
         </div>
-
-        <%-- section for centre div --%>
         <div id="idCentreDivBox" class="classCentreDivBox">
-
-            <%-- Page Header --%>
             <div id="idHeaderDiv" class="classHeaderDiv">
                 <label id="idLabelAppName" class="classLabelAppName">
                     <span class="material-icons">laptop</span>
                     <i class="classBrandName">JamesLaptop</i>
                 </label>
-
-                <%-- side menu icon --%>
                 <div class="classDivSideMenuComponentParent" onclick="openNav()">
                     <div class="classDivSideMenuComponent"></div>
                     <div class="classDivSideMenuComponent"></div>
                     <div class="classDivSideMenuComponent"></div>
                 </div>
             </div>
-
-        
-    
-
-            <%-- home page main content --%>
             <div class="classDivMainContent">
                 <table class="classTableMainContent" >
                     <tr>
@@ -375,52 +323,30 @@
                             <br/> <br/>
                             <input id="idButtonBuyNow" class="classButtonBuyNow" type="button" value="Buy Now"  />
                             <input id="idButtonLearnMore" class="classButtonLearnMore" type="button" value="Learn More" />
-                    
                             <script type="text/javascript">
-
                                 document.getElementById("idButtonBuyNow").onclick = function () {
                                     location.href = "Checkout.aspx";
                                 };
                             </script>
-                    
-
                             <script type="text/javascript">
-
                                 document.getElementById("idButtonLearnMore").onclick = function () {
                                     location.href = "ProductFeatures.aspx";
                                 };
                             </script>
-
-
-                    
                         </td>
                     </tr>
                 </table>
             </div>
-
-    
-            <%-- footer --%>
             <div id="idDivFooter" class="classDivFooter">
                 <footer>
                     <label>
-                        <!--<h6>&copy; Student Registration Application</h6>-->
                         <i><strong>&copy; James Laptop eCommerce Website</strong></i>
                     </label>
                 </footer>
             </div>
         </div>
-
-
-        <%-- section div right side --%>
         <div id="idRightDivBox" class="classRightDivBox">
         </div>
-
-
-
-
-    
-    
-
     </form>
 </body>
 </html>
