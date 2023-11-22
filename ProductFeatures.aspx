@@ -7,7 +7,6 @@
     <title>Product Features</title>
     <meta charset="utf-8" />
     <style type="text/css">
-
         div.classLeftDivBox {
         }
 
@@ -44,10 +43,10 @@
         }
 
         div.classDivSideMenuComponent {
-            width: 24px; /*35px*/
-            height: 3px; /*5px*/
+            width: 24px; 
+            height: 3px; 
             background-color: black;
-            margin: 3px; /*3px 0*/
+            margin: 3px; 
         }
 
         div.classDivSideMenuComponentParent {
@@ -60,17 +59,12 @@
             padding-bottom:1px;
             padding-left:1px; 
             padding-right:1px;
-            /*border-radius:1px 1px;*/
         }
 
         div.classDivSideMenuComponentParent:hover {
             background-color:lightgray;
         }
         
-        /* *********************************** */
-        /* style for side menu */
-        /* start */
-
         .sidenav {
             height: 100%;
             width: 0;
@@ -131,19 +125,10 @@
             .sidenav a {font-size: 18px;}
         }
 
-        
-
-        /* end */
-        /* style for side menu */
-        /* *********************************** */
-        
         label.classLabelAppName2 {
             font-family: Calibri;
             font-size: 18px;
             margin-top:10px;
-            /*height:30px;*/
-            /*background-color:antiquewhite;*/
-            /*margin-left:10px;*/
         }
 
         i.classBrandName2 {
@@ -156,10 +141,8 @@
             height:auto;
             float:left;
             display:block;
-            /*border: 1px solid black;*/
             margin-top:10px;
             border-radius:10px;
-
         }
 
         table.classTableProductFeatureMainContent {
@@ -169,15 +152,11 @@
         }
 
             table.classTableProductFeatureMainContent td {
-               /* border: 1px solid black;*/
             }
 
-
         .classTableTdProductFeatureMainContent {
-
              width:30%;
              padding-top:0px;
-             /*text-align:start;*/
             vertical-align:top; 
         }
 
@@ -193,11 +172,9 @@
         }
 
         div.classDivProductFeaturesDescription {
-            /*border: 1px solid black;*/
             width:100%;
-            height: 400px; /*450px*/
+            height: 400px; 
             overflow:scroll;
-
         }
 
         .classDivFooter {
@@ -207,7 +184,6 @@
             width: inherit;
             min-width: 1000px;
             height: 40px;
-            /*background-color: aliceblue;*/
             font-family: Calibri;
             font-size: 11px;
         }
@@ -218,9 +194,6 @@
             text-align:left;
         }
 
-        /* *********************************** */
-        /* Accordion */
-        /* start */
         .accordion {
           background-color: #eee;
           color: #444;
@@ -232,9 +205,7 @@
           outline: none;
           font-size: 16px; /*15px*/
           transition: 0.4s;
-          /*added*/
           font-family:Calibri;
-
         }
 
         .active, .accordion:hover {
@@ -261,10 +232,6 @@
           transition: max-height 0.2s ease-out;
         }
 
-        /* end */
-        /* Accordion */
-        /* *********************************** */
-
         .classTableFeature1 {
             width:100%;
         }
@@ -281,7 +248,6 @@
             text-align:left;
             font-family:Calibri;
             font-size:16px;
-
         }
 
         .classImgFeature {
@@ -296,44 +262,35 @@
             font-family:Calibri;
             font-size:16px;
             margin-left:5px;
-           /* margin-top:15px;*/
-            /*display:block;*/
         }
-
 
          .classButtonBuyNow {
              background-color: #4CAF50;
              border: 1px solid black;
              border-radius:10px;
              color: white;
-             padding: 7px 24px; /*15px 32px*/
+             padding: 7px 24px; 
              text-align: center;
              text-decoration: none;
              display: inline-block;
              font-size: 16px;
-             /*margin: 4px 2px;*/
-             /*margin-right:2px;*/
              margin-left:5px;
              cursor: pointer;
          }
 
         .classButtonBuyNow:hover {
              opacity:0.9;
-     
         }
 
         div.classDivLogoutOption {
             width:fit-content;
             height:fit-content;
-            /*border: 1px solid black;*/
         }
 
         .CssClassIdUserLoginStatus {
-            /*float:right;*/
             font-family:Calibri;
             font-size:16px;
             color:black;
-            /*border: 1px solid black;*/
             padding-left:1px;
             padding-right:1px;
             padding-top:1px;
@@ -346,7 +303,6 @@
         .CssClassIdUserLoginStatus:hover {
             text-decoration:underline;
         }
-
     </style>
     <script type="text/javascript"> 
 
