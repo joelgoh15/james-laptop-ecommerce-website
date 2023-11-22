@@ -25,8 +25,5 @@ namespace Portfolio2_3
                 }
             }
         }
-
-
-
-    }//end-class
-}//end-namespace
+    }
+}
