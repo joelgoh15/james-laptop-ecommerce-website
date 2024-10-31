@@ -1,8 +1,6 @@
 # <i>JamesLaptop</i> eCommerce Website
 An eCommerce website for <i>JamesLaptop</i>.
 
-A software engineering portfolio by Joel Goh C.H. 
-
 # Technical Details
 1. A portfolio project with an emphasis in UI/UX design.
 2. Technology stacks and approach used:
