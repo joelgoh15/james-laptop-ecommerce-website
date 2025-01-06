@@ -21,4 +21,4 @@ An eCommerce website for <i>JamesLaptop</i>.
 
 # Project Presentation
 
-https://github.com/user-attachments/assets/39fee38f-a643-416b-b44c-f34b0886fee6
+https://github.com/user-attachments/assets/bc52f870-15c1-49d2-a21a-320ea6b260b5
